@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/rlt_answer_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200">
+
+        <ImageView
+            android:id="@+id/img_answer_teacher"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            tools:srcCompat="@tools:sample/avatars" />
+        <TextView
+            android:id="@+id/tv_id_answer"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_toEndOf="@+id/img_answer_teacher"
+            android:text="Id:1" />
+
+        <TextView
+            android:id="@+id/tv_name_answer"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="16sp"
+            android:textColor="#ffff"
+            android:layout_toEndOf="@+id/img_answer_teacher"
+            android:layout_below="@+id/tv_id_answer"
+            android:text="Chuyển động thẳng đều" />
+
+        <ImageView
+            android:id="@+id/img_edit_answer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_blue_corner_border_16"
+            android:layout_toLeftOf="@+id/img_delete_answer"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            />
+
+        <ImageView
+            android:id="@+id/img_delete_answer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_blue_corner_border_16"
+            app:srcCompat="@android:drawable/ic_delete"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

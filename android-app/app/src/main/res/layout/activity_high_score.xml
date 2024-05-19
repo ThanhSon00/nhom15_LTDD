@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HighScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/top_background2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name_test_high_score"
+            android:layout_width="379dp"
+            android:layout_height="62dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Danh sách điểm cao bài thi"
+            android:textColor="#B8AB39"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_main_manu"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_load_high_score"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_margin="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

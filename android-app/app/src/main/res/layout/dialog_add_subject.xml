@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:background="@color/teal_200"
+    android:gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/rlt_dialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_dialog_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Thêm mới môn học"
+            android:textColor="#ffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_dialog_imgSubject"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rlt_dialog_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp">
+
+        <FrameLayout
+
+            android:id="@+id/img_dialog_addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlt_dialog_nameSubject"
+        android:layout_marginTop="4dp"
+        android:layout_below="@+id/rlt_dialog_imgSubject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+     >
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="275dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:inputType="textPersonName"
+            android:hint="Tên môn học" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/rlt_dialog_button"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/rlt_dialog_nameSubject"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="4dp"
+        >
+
+        <Button
+            android:id="@+id/dialog_btn_Ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:text="Xác nhận" />
+
+        <Button
+            android:id="@+id/dialog_btn_Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="40dp"
+            android:text="Hủy bỏ" />
+    </LinearLayout>
+</RelativeLayout>

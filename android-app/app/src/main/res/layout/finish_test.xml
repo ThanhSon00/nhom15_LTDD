@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    app:cardBackgroundColor="#17BDBB"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       >
+
+      <LinearLayout
+          android:id="@+id/llt_history"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+      <RelativeLayout
+
+          android:layout_width="64dp"
+          android:layout_height="match_parent"
+          android:layout_marginEnd="8dp"
+          >
+
+         <ProgressBar
+             android:id="@+id/pbr_complete"
+             style="?android:attr/progressBarStyleHorizontal"
+             android:layout_width="48dp"
+             android:layout_height="48dp"
+             android:layout_alignParentTop="true"
+             android:layout_centerInParent="true"
+
+             android:layout_marginBottom="2dp"
+             android:background="@drawable/circle_shape"
+             android:indeterminate="false"
+             android:max="100"
+             android:progressDrawable="@drawable/circle_progressbar">
+
+         </ProgressBar>
+
+         <TextView
+             android:id="@+id/txt_percent"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/pbr_complete"
+             android:layout_alignParentTop="true"
+             android:layout_centerInParent="true"
+             android:layout_marginTop="18dp"
+             android:text="2%"
+             android:textColor="#ffff"
+             android:textSize="8sp" />
+
+         <TextView
+             android:id="@+id/txt_date_complete"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/pbr_complete"
+             android:layout_centerInParent="true"
+             android:text="29/3/2023"
+             android:textColor="#ffff"
+             android:textSize="12sp" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+         <TextView
+             android:id="@+id/tv_nameExam"
+             android:layout_width="wrap_content"
+             android:textColor="#ffff"
+             android:layout_height="wrap_content"
+             android:text="Đề thi Trung học phổ thông quốc gia năm 2023 - Đề số 1" />
+
+         <ImageView
+             android:id="@+id/img_subject"
+             android:layout_width="30dp"
+             android:layout_height="35dp"
+             android:layout_below="@+id/tv_nameExam"
+             android:src="@drawable/baseline_menu_book_24" />
+
+         <TextView
+             android:id="@+id/tv_nameSubject"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_nameExam"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="7dp"
+             android:layout_marginTop="6dp"
+             android:textColor="#ffff"
+             android:layout_toEndOf="@+id/img_subject"
+             android:text="Toán" />
+
+
+         <ImageView
+             android:id="@+id/img_timer"
+             android:layout_width="30dp"
+             android:layout_height="40dp"
+             android:layout_below="@+id/tv_nameExam"
+             android:layout_marginStart="8dp"
+             android:layout_toEndOf="@+id/tv_nameSubject"
+             android:src="@drawable/baseline_access_time_24" />
+
+         <TextView
+             android:id="@+id/tv_time_exam"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_nameExam"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="7dp"
+             android:textColor="#ffff"
+             android:layout_marginTop="6dp"
+             android:layout_toEndOf="@+id/img_subject"
+             android:text="Toán" />
+
+         <TextView
+             android:id="@+id/tv_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/tv_nameExam"
+             android:layout_centerInParent="true"
+             android:layout_marginStart="7dp"
+             android:textColor="#ffff"
+             android:layout_marginTop="6dp"
+             android:layout_toEndOf="@+id/img_timer"
+             android:text="45 phút" />
+      </RelativeLayout>
+      </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin ="12dp">
+      <Button
+          android:layout_weight="1"
+          android:text="Để sau"
+          android:id="@+id/btn_watch_later"
+          android:layout_width="match_parent"
+          android:layout_marginRight ="12dp"
+          android:layout_height="48dp"></Button>
+      <Button
+          android:layout_weight="1"
+          android:text="Xem đáp án"
+          android:id="@+id/btn_watch_now"
+          android:layout_marginLeft ="12dp"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"></Button>
+   </LinearLayout>
+
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>

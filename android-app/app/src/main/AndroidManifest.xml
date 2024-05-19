@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FinalProjectExamOnline"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.UpdateAvatar"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacher.LoginTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HighScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".activity.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoadTopicData"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacher.AddQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacher.AddTopicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.teacher.AddSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test.HomeTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test.AnswerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test.QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.TestInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TopicActivity"
+            android:exported="false"
+            android:label="@string/title_activity_topic"
+            android:theme="@style/Theme.FinalProjectExamOnline.NoActionBar" />
+        <activity
+            android:name=".activity.test.LoadQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test.LoadHistoryQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.teacher.HomeTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.test.AddTestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.ActivityIntro"
+            android:exported="true" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

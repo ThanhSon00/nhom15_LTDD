@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:background="@color/teal_700">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlt_information_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_avt_teacher"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/pic6" />
+
+            <TextView
+                android:id="@+id/tv_name_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:textSize="16sp"
+                android:layout_toEndOf="@+id/img_avt_teacher"
+                android:textColor="#ffff"
+                android:text="Xin chào Nguyễn Thái Ngọc Tân" />
+            <TextView
+                android:layout_below="@+id/tv_name_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_toEndOf="@+id/img_avt_teacher"
+                android:textColor="#ffff"
+                android:text="Hôm nay bạn sẽ học gì nào?!" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlt_addSubject"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search_subject"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_blue_corner_border_16"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_subject_home_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="367dp"
+                android:layout_below="@+id/search_subject"
+                android:layout_marginTop="4dp" />
+
+            <FrameLayout
+                android:id="@+id/fr_upload"
+                android:layout_below="@+id/rcv_subject_home_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlt_addSubject"
+            android:layout_below="@+id/rlt_information_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_addSubject"
+                android:layout_width="128dp"
+                android:layout_height="86dp"
+                android:src="@android:drawable/ic_input_add" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
