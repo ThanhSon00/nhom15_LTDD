@@ -1,4 +1,4 @@
-# nhom25_LTDD
+# Nhóm 15 Lập trình di động
 
 Phan Hoàng Thanh Sơn   20110714
 
